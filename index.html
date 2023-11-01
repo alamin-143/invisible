@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible.af</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+</head>
+<body class="bg-[#090A0C]">
+
+    <!-- header area start here -->
+    
+    <header class="relative">
+        <div class="hidden sm:block absolute top-0 left-0"><img src="assets/img/bg-img/header-bg.png" alt="hero-bg"></div>
+        <div class="block sm:hidden absolute top-0 right-0"><img src="assets/img/bg-img/header-bg-sm.png" alt="hero-bg"></div>
+        <div class="py-4 relative z-50">
+            <div class="container flex items-center justify-between relative">
+                <a href="#" class="logo hidden lg:block"><img src="assets/img/logo/logo-lg.png" alt="site logo"></a>
+                <a href="#" class="logo lg:hidden"><img src="assets/img/logo/logo-sm.png" alt="site logo"></a>
+                <div class="hidden md:block">
+                    <ul class="flex gap-1 p-[6px] bg-white/5 box-shadow rounded-[32px]">
+                        <li><a href="#" class="btn nav-btn-selected">Home</a></li>
+                        <li><a href="#" class="btn text-white/80 hover:text-white/50">about us</a></li>
+                        <li><a href="#" class="btn text-white/80 hover:text-white/50">portfolios</a></li>
+                        <li><a href="#" class="btn text-white/80 hover:text-white/50">case studies</a></li>
+                        <li><a href="#" class="btn text-white/80 hover:text-white/50">blog</a></li>
+                        <li><a href="#" class="btn text-white/80 hover:text-white/50">builder labs</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="hidden md:flex items-center justify-center gap-1 btn btn-primary group"><span>contact us</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+
+                <!-- mobile menu start here -->
+                <div class="flex md:hidden gap-1 p-[6px] bg-white/5 box-shadow rounded-[32px] items-center">
+                    <div>
+                        <div class="flex items-center justify-center h-6 w-6 bg-white/[0.04] rounded-full cursor-pointer transition duration-300 hover:bg-[#090A0C6B]/[42%]" id="menu_open">
+                            <img class="" src="assets/img/menu-icon/open.png" alt="open menu" >
+                        </div>
+                        <div class="hidden items-center justify-center h-6 w-6 bg-[#090A0C6B]/[42%] rounded-full cursor-pointer" id="menu_close">
+                            <img src="assets/img/menu-icon/close.png" alt="close menu">
+                        </div>
+                    </div>
+                    <a href="#" class="btn text-white/70 hover:text-white/50" id="selected_item">home</a>
+                </div>
+                <ul class="py-[14px] px-[10px] space-y-[10px] bg-dark-200 box-shadow rounded-2xl absolute top-[130%] right-5 z-50 w-44 hidden md:hidden" id="mobile_menu">
+                    <li><a href="#" class="btn block text-white/60 hover:text-white/90 hover:bg-white/[0.04] p-2">Home</a></li>
+                    <li><a href="#" class="btn block text-white/60 hover:text-white/90 hover:bg-white/[0.04] p-2">about us</a></li>
+                    <li><a href="#" class="btn block text-white/60 hover:text-white/90 hover:bg-white/[0.04] p-2">portfolios</a></li>
+                    <li><a href="#" class="btn block text-white/60 hover:text-white/90 hover:bg-white/[0.04] p-2">case studies</a></li>
+                    <li><a href="#" class="btn block text-white/60 hover:text-white/90 hover:bg-white/[0.04] p-2">blog</a></li>
+                    <li><a href="#" class="btn block text-white/60 hover:text-white/90 hover:bg-white/[0.04] p-2">builder labs</a></li>
+                </ul>
+                <!-- mobile menu end here -->
+            </div>
+        </div>
+        <div class="container relative z-10 p-[44px] sm:px-12 sm:pt-16 sm:pb-24">
+            <h1 class="hero-title text-[44px] md:text-[66px] xl:text-[76px] leading-[120%] -tracking-[2.432px] font-bold">Agency that builds incredible products with spectacular design & bulletproof data</h1>            
+            <p class="text-white/70 text-2xl leading-[140%] -tracking-[0.12px] mt-5">We help brands create products with incredible user experience, top of the line visual designs backed by copious amounts of analytics.</p>
+            <a href="#" class=" md:hidden inline-flex items-center justify-center gap-1 btn btn-primary group mt-5"><span>contact us</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+        </div>
+
+
+
+    </header>
+    <!-- header area end here -->
+
+    <!-- about area start here -->
+    <div>
+        <div class="container grid grid-cols-12 gap-2 relative z-10">
+            <div class="col-span-full sm:col-span-6 lg:col-span-5 p-6 md:p-8 lg:p-12 bg-dark-200 rounded-[20px] box-shadow">
+                <div class="section-title">
+                    <h2>Why Invisible?</h2>
+                    <p class="para-style">Entrepreneurs need more than just design. Which is why Invisible likes to get involved in the building process from the ground floor. We're a network of niche verticals that are obsessed with building products that scale.</p>
+                </div>
+                <div class="space-y-[10px] mt-5" >
+                    <div class="grid grid-cols-12 gap-[10px]">
+                        <div class="col-span-12 md:col-span-7 lg:col-span-9 p-[10px] rounded-[42px] border border-white/[0.04] transition-all duration-300 hover:bg-[#444444]">
+                            <div class="flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 bg-dark-400 border border-white/[0.06]">📈️</span>
+                                <p class="para-style leading-none text-white">UX Research & Analytics</p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-5 lg:col-span-3 p-[10px] rounded-[42px] border border-white/[0.04] transition-all duration-300 hover:bg-[#444444]">
+                            <div class="flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 bg-dark-400 border border-white/[0.06]">🚀</span>
+                                <p class="para-style leading-none text-white">AI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 p-[10px] rounded-[42px] border border-white/[0.04] transition-all duration-300 hover:bg-[#444444]">
+                        <span class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 bg-dark-400 border border-white/[0.06]">🖥️</span>
+                        <p class="para-style leading-none text-white">Visual Design, Animations & Content</p>
+                    </div>
+                    <div class="grid grid-cols-12 gap-[10px]">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-5 p-[10px] rounded-[42px] border border-white/[0.04] transition-all duration-300 hover:bg-[#444444]">
+                            <div class="flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 bg-dark-400 border border-white/[0.06]">✍️</span>
+                                <p class="para-style leading-none text-white">PropTech</p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-7 p-[10px] rounded-[42px] border border-white/[0.04] transition-all duration-300 hover:bg-[#444444]">
+                            <div class="flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 bg-dark-400 border border-white/[0.06]">🤝</span>
+                                <p class="para-style leading-none text-white">Talent Acquisition</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 p-[10px] rounded-[42px] border border-white/[0.04] transition-all duration-300 hover:bg-[#444444]">
+                        <span class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 bg-dark-400 border border-white/[0.06]">⚙️</span>
+                        <p class="para-style leading-none text-white">Web3 & Decentralised Products</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- portfolio area start here -->
+            <div class="col-span-full sm:col-span-6 lg:col-span-7 p-6 md:p-8 lg:p-12 bg-dark-200 rounded-[20px] box-shadow" >
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p class="para-style">In the last few years we have helped incredible companies build world-class, spectacular products that millions of people love.</p>
+                </div>
+                <div class=" space-y-5 px-0 py-5 md:p-10 border border-white/[0.04] rounded-2xl my-5">
+                    <div class="swiper portfolio-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide w-[121px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/dropbox.png" alt="dropbox">
+                            </div>
+                            <div class="swiper-slide w-[134px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/grammarly.png" alt="grammarly">
+                            </div>
+                            <div class="swiper-slide w-[125px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/airwallex.png" alt="airwallex">
+                            </div>
+                            <div class="swiper-slide w-[125px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/customer.png" alt="customer">
+                            </div>
+                            <div class="swiper-slide w-[121px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/dropbox.png" alt="dropbox">
+                            </div>
+                            <div class="swiper-slide w-[134px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/grammarly.png" alt="grammarly">
+                            </div>
+                            <div class="swiper-slide w-[125px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/airwallex.png" alt="airwallex">
+                            </div>
+                            <div class="swiper-slide w-[125px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/customer.png" alt="customer">
+                            </div>
+                        </div>
+                    </div>
+                    <div dir="rtl" class="swiper portfolio-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide w-[120px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/razorpay.png" alt="razorpay">
+                            </div>
+                            <div class="swiper-slide w-[83px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/dribbble.png" alt="dribbble">
+                            </div>
+                            <div class="swiper-slide w-[98px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/square.png" alt="square">
+                            </div>
+                            <div class="swiper-slide w-[90px] h-[35px]"> 
+                                <img class="w-full h-full" src="assets/img/portfolio/slack.png" alt="slack">
+                            </div>
+                            <div class="swiper-slide w-[73px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/gusto.png" alt="gusto">
+                            </div>
+                            <div class="swiper-slide w-[120px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/razorpay.png" alt="razorpay">
+                            </div>
+                            <div class="swiper-slide w-[83px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/dribbble.png" alt="dribbble">
+                            </div>
+                            <div class="swiper-slide w-[98px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/square.png" alt="square">
+                            </div>
+                            <div class="swiper-slide w-[90px] h-[35px]"> 
+                                <img class="w-full h-full" src="assets/img/portfolio/slack.png" alt="slack">
+                            </div>
+                            <div class="swiper-slide w-[73px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/gusto.png" alt="gusto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper portfolio-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide w-[86px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/webflow.png" alt="webflow">
+                            </div>
+                            <div class="swiper-slide w-[116px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/trustpilot.png" alt="trustpilot">
+                            </div>
+                            <div class="swiper-slide w-[100px] h-[35px]"> 
+                                <img class="w-full h-full" src="assets/img/portfolio/framer.png" alt="framer">
+                            </div>
+                            <div class="swiper-slide w-[122px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/evernote.png" alt="evernote">
+                            </div>
+                            <div class="swiper-slide w-[111px] h-[35px]">
+                                <img class="w-full h-full" src="assets/img/portfolio/calendly.png" alt="calendly">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex items-center justify-between">
+                    <p class="para-style text-lg mb-[10px] lg:mb-0">Next product could be yours!</p>
+                    <a href="#" class="inline-flex items-center justify-center gap-1 btn btn-secondary group"><span>work with us</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <!-- portfolio area end here -->
+
+        </div>
+    </div>
+    <!-- about area end here -->
+
+    <!-- team area start here -->
+    <div class="relative overflow-hidden">
+        <div class="absolute -right-[850px] -top-[470px] h-[1000px]  w-[1500px] hidden lg:block">
+            <img class="" src="assets/img/bg-img/team-bg.png" alt="gradient bg">
+        </div>
+        <div class="container grid grid-cols-12 gap-2 my-[10px]">
+            <div class="col-span-full sm:col-span-6 lg:col-span-7 p-6 md:p-8 lg:p-12 bg-dark-200 rounded-[20px] box-shadow">
+                <div class="section-title mb-5">
+                    <h2>Our team</h2>
+                    <p class="para-style">Builders need more than just capital. Which is why Builder VC likes to get involved in the building process from the ground floor.</p>
+                </div>
+                <div class="swiper team-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide w-[205px] md:w-[255px]">
+                            <div class="rounded-[20px] transition duration-300 delay-0  after:content-[''] after:absolute after:top-full hover:after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t after:from-[#292D35] hover:after:from-[#569742] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] hover:after:transition hover:after:duration-300 after:rounded-[20px] after:z-30  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-20 before:bg-gradient-to-t before:from-[#292D35] before:rounded-[20px] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] ">
+                                <div class="relative  rounded-t-[20px]">
+                                    <img class="rounded-t-[20px] w-full h-full" src="assets/img/team/arun.png" alt="arun">
+                                </div>
+                                <div class="section-title p-5 rounded-b-[20px] relative z-50">
+                                    <h2 class="mb-[6px]">Arun Pattnaik</h2>
+                                    <span class="para-style text-white">CEO.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-[205px] md:w-[255px]">
+                            <div class="rounded-[20px] transition duration-300 delay-0  after:content-[''] after:absolute after:top-full hover:after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t after:from-[#292D35] hover:after:from-[#569742] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] hover:after:transition hover:after:duration-300 after:rounded-[20px] after:z-30  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-20 before:bg-gradient-to-t before:from-[#292D35] before:rounded-[20px] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] ">
+                                <div class="relative  rounded-t-[20px]">
+                                    <img class="rounded-t-[20px] w-full h-full" src="assets/img/team/ruthvik.png" alt="ruthvik">
+                                </div>
+                                <div class="section-title p-5 rounded-b-[20px] relative z-50">
+                                    <h2 class="mb-[6px]">Ruthvik M.</h2>
+                                    <span class="para-style text-white">CTO.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-[205px] md:w-[255px]">
+                            <div class="rounded-[20px] delay-0 after:content-[''] after:absolute after:top-full hover:after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t after:from-[#292D35] hover:after:from-[#569742] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] after:transition-all hover:after:transition hover:after:duration-300 after:rounded-[20px] after:z-30  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-20 before:bg-gradient-to-t before:from-[#292D35] before:rounded-[20px] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] ">
+                                <div class="relative  rounded-t-[20px]">
+                                    <img class="rounded-t-[20px] w-full h-full" src="assets/img/team/ruthvik.png" alt="sumita">
+                                </div>
+                                <div class="section-title p-5 rounded-b-[20px] relative z-50">
+                                    <h2 class="mb-[6px]">Sumita</h2>
+                                    <span class="para-style text-white">CPO.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-[205px] md:w-[255px]">
+                            <div class="rounded-[20px] delay-0 after:content-[''] after:absolute after:top-full hover:after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t after:from-[#292D35] hover:after:from-[#569742] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] after:transition-all hover:after:transition hover:after:duration-300 after:rounded-[20px] after:z-30  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-20 before:bg-gradient-to-t before:from-[#292D35] before:rounded-[20px] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] ">
+                                <div class="relative  rounded-t-[20px]">
+                                    <img class="rounded-t-[20px] w-full h-full" src="assets/img/team/manjurul.png" alt="manjurul">
+                                </div>
+                                <div class="section-title p-5 rounded-b-[20px] relative z-50">
+                                    <h2 class="mb-[6px]">Manjurul Islam</h2>
+                                    <span class="para-style text-white">title here</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-[205px] md:w-[255px]">
+                            <div class="rounded-[20px] delay-0 after:content-[''] after:absolute after:top-full hover:after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t after:from-[#292D35] hover:after:from-[#569742] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] after:transition-all hover:after:transition hover:after:duration-300 after:rounded-[20px] after:z-30  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-20 before:bg-gradient-to-t before:from-[#292D35] before:rounded-[20px] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] ">
+                                <div class="relative  rounded-t-[20px]">
+                                    <img class="rounded-t-[20px] w-full h-full" src="assets/img/team/ratul.png" alt="ratul">
+                                </div>
+                                <div class="section-title p-5 rounded-b-[20px] relative z-50">
+                                    <h2 class="mb-[6px]">Ratul Ahmed</h2>
+                                    <span class="para-style text-white">Graphic Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-[205px] md:w-[255px]">
+                            <div class="rounded-[20px] delay-0 after:content-[''] after:absolute after:top-full hover:after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t after:from-[#292D35] hover:after:from-[#569742] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] after:transition-all hover:after:transition hover:after:duration-300 after:rounded-[20px] after:z-30  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-20 before:bg-gradient-to-t before:from-[#292D35] before:rounded-[20px] from-[5.75%] to-[rgba(86, 151, 66, 0.00)] to-[100%] ">
+                                <div class="relative  rounded-t-[20px]">
+                                    <img class="rounded-t-[20px] w-full h-full" src="assets/img/team/nowshin.png" alt="nowshin">
+                                </div>
+                                <div class="section-title p-5 rounded-b-[20px] relative z-50">
+                                    <h2 class="mb-[6px]">Nusrat Jahan</h2>
+                                    <span class="para-style text-white">title here</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden  lg:flex items-center justify-between mt-[30px]">
+                    <div class="section-title">
+                        <h2 class="!text-lg !mb-[3px]">Interested in working with us?</h2>
+                        <p class="para-style">Send us your best piece of work and we’ll get in touch!</p>
+                    </div>
+                    <a href="#" class="flex items-center justify-center gap-1 btn btn-secondary group"><span>write to us</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                </div>
+            </div>
+
+            <!-- work area start here -->
+            <div class="col-span-full sm:col-span-6 lg:col-span-5 p-6 md:p-8 lg:p-12 bg-dark-200 rounded-[20px] box-shadow">
+                <div class="swiper work-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="section-title">
+                                <h2>Work</h2>
+                                <p class="para-style capitalize">read our case studies</p>
+                            </div>
+                            <div class="mt-5">
+                                <img class="rounded-[20px] w-full h-40 object-cover" src="assets/img/borker-network.png" alt="borker-network">
+                                <div class="section-title my-5">
+                                    <h2 class=" !text-lg">A million brokers, selling homes for a billion people!</h2>
+                                    <p class="para-style">Builders need more than just capital. Which is why Builder VC likes to get involved in the building process from the...</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <a href="#"><img src="assets/img/portfolio/slack.png" alt="slack"></a>
+                                    <a href="#" class="flex items-center justify-center gap-1 btn btn-secondary group"><span>read more</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section-title">
+                                <h2>Blog</h2>
+                                <p class="para-style capitalize">Read Our Latest Posts</p>
+                            </div>
+                            <div class="mt-5">
+                                <img class="rounded-[20px] w-full h-40 object-cover" src="assets/img/team/teamm-2.png" alt="blog-img">
+                                <div class="section-title my-5">
+                                    <h2 class=" !text-lg">Builder Capital Backs DAO Tooling Startup!</h2>
+                                    <p class="para-style">Builders need more than just capital. Which is why Builder VC likes to get involved in the bu...</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="flex items-center justify-center gap-1 btn btn-secondary group"><span>read more</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section-title">
+                                <h2>Work</h2>
+                                <p class="para-style capitalize">read our case studies</p>
+                            </div>
+                            <div class="mt-5">
+                                <img class="rounded-[20px] w-full h-40 object-cover" src="assets/img/borker-network.png" alt="borker-network">
+                                <div class="section-title my-5">
+                                    <h2 class=" !text-lg">A million brokers, selling homes for a billion people!</h2>
+                                    <p class="para-style">Builders need more than just capital. Which is why Builder VC likes to get involved in the building process from the...</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <a href="#"><img src="assets/img/portfolio/slack.png" alt="slack"></a>
+                                    <a href="#" class="flex items-center justify-center gap-1 btn btn-secondary group"><span>read more</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section-title">
+                                <h2>Blog</h2>
+                                <p class="para-style capitalize">Read Our Latest Posts</p>
+                            </div>
+                            <div class="mt-5">
+                                <img class="rounded-[20px] w-full h-40" src="assets/img/team/teamm-2.png" alt="blog-img">
+                                <div class="section-title my-5">
+                                    <h2 class=" !text-lg">Builder Capital Backs DAO Tooling Startup!</h2>
+                                    <p class="para-style">Builders need more than just capital. Which is why Builder VC likes to get involved in the bu...</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <a href="#" class="flex items-center justify-center gap-1 btn btn-secondary group"><span>read more</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"><i class="far fa-long-arrow-right"></i></div>
+                    <div class="swiper-button-prev"><i class="far fa-long-arrow-left"></i></div>
+                </div>
+            </div>
+            <!-- work area end here -->
+    
+        </div>
+    </div>
+    <!-- team area end here -->
+
+    <!-- footer area start here -->
+    <footer class="relative">
+        <div class="sm:hidden absolute -top-[360px] left-0 ">
+            <img  src="assets/img/bg-img/footer-bg.png" alt="footer-bg">
+        </div>
+        <div class="container">
+            <div class="px-8 lg:px-12 pt-8 lg:pt-12 box-shadow rounded-[20px] bg-dark-200 ">            
+                <div class="relative z-10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="hidden lg:block"><img src="assets/img/footer-logo-1.png" alt="footer logo"></a>
+                        <a href="#" class="lg:hidden"><img src="assets/img/footer-logo-2.png" alt="footer logo"></a>
+                        <a href="#" class="hidden md:flex items-center justify-center gap-1 btn btn-primary group mb-5"><span>say hello!</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                    </div>
+                    <h2 class="text-white/90 text-3xl sm:text-[46px] font-bold leading-[130%] -tracking-[1.472px] my-5">Looking to bring your idea to life? <br class="hidden lg:block"> Shoot us a message!</h2>
+                    <a href="#" class="inline-flex md:hidden items-center justify-center gap-1 btn btn-primary group mb-5"><span>say hello!</span><span class="-rotate-45 group-hover:rotate-0 transition-all duration-300"><i class="far fa-long-arrow-right"></i></span></a>
+                    <div class="md:flex items-center justify-between pt-5 pb-8 lg:pb-6 border-t border-t-white/[0.04]">
+                        <p class="para-style hidden md:block">Copyright © 2023 All Rights Reserved</p>
+                        <ul class="hidden md:flex gap-7 items-center">
+                            <li><a href="#" class="para-style capitalize transition-all duration-300 hover:text-white/50 hidden lg:inline-block">X (Previously Twitter)</a></li>
+                            <li><a href="#" class="para-style capitalize transition-all duration-300 hover:text-white/50 lg:hidden">Twitter</a></li>
+                            <li><a href="#" class="para-style capitalize transition-all duration-300 hover:text-white/50">Telegram</a></li>
+                            <li><a href="#" class="para-style capitalize transition-all duration-300 hover:text-white/50">Instagram</a></li>
+                            <li><a href="#" class="para-style capitalize transition-all duration-300 hover:text-white/50">dribbble</a></li>
+                            <li><a href="#" class="para-style capitalize transition-all duration-300 hover:text-white/50">linkedin</a></li>
+                        </ul>
+                        <ul class="md:hidden flex shrink-0 gap-7 items-center justify-center">
+                            <li>
+                                <a class="flex w-9 h-[37px]" href="#"><img class="shrink-0 w-9 h-[37px]" src="assets/img/social-media/twitter.png" alt="twitter"></a>
+                            </li>
+                            <li>
+                                <a class="flex w-9 h-[37px]" href="#"><img class="shrink-0 w-9 h-[37px]" src="assets/img/social-media/telegram.png" alt="telegram"></a>
+                            </li>
+                            <li>
+                                <a class="flex w-9 h-[37px]" href="#"><img class="shrink-0 w-9 h-[37px]" src="assets/img/social-media/instagram.png" alt="instagram"></a>
+                            </li>
+                            <li>
+                                <a class="flex w-9 h-[37px]" href="#"><img class="shrink-0 w-9 h-[37px]" src="assets/img/social-media/linkedin.png" alt="linkedin"></a>
+                            </li>
+                            <li>
+                                <a class="flex w-9 h-[37px]" href="#"><img class="shrink-0 w-9 h-[37px]" src="assets/img/social-media/dribbble.png" alt="dribbble"></a>
+                            </li>
+                        </ul>
+                        <p class="para-style text-center mt-5 md:hidden">Designed by <a href="#" class="para-style transition duration-300 hover:text-white/50">@Paresh</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end here -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

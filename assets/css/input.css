@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 400;
+        src: url('./assets/fonts/Satoshi-Regular.woff');
+    }
+    @font-face {
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 700;
+        src: url('./assets/fonts/Satoshi-Bold.woff');
+    }
+    html {
+        font-family: 'Satoshi', sans-serif;
+    }
+}
+@layer components {
+    .btn {
+        @apply text-white text-sm font-normal leading-none -tracking-[0.07px] transition-all duration-300 rounded-[32px] capitalize px-[10px] py-2
+    }
+    .btn-primary {
+        background:  linear-gradient(180deg, #1B754F 0.08%, #569742 71.74%, #F2F21F 111.86%); 
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.60) inset; 
+        padding: 10px 14px;
+        transition: all .3s;
+    }
+    .btn-primary:hover {
+        background: linear-gradient(241deg, #309A6D 22.4%, #7DC767 69.51%, #F9F952 95.88%); 
+    }
+    .nav-btn-selected {
+        background: linear-gradient(180deg, #090A0C 0%, rgba(9, 10, 12, 0.00) 100%);
+        box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.05) inset;
+        color: #fff;
+    }
+
+    .btn-secondary {
+        @apply border border-dark-400 px-[14px] py-[10px]
+    }
+    .btn-secondary:hover {
+        @apply bg-dark-400
+    }
+    .hero-title {
+        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.96) 34.38%, rgba(255, 255, 255, 0.68) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .section-title h2 {
+        @apply text-2xl text-white/90 font-bold leading-[140%] -tracking-[0.288px] mb-[10px]
+    }
+    .para-style {
+        @apply text-sm leading-[150%] text-white/70 -tracking-[0.07px] font-normal
+    }
+    .box-shadow {
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.05) inset;
+    }
+
+}
+
+/* for swiper js */
+.work-wrapper .swiper-button-next::after, .work-wrapper .swiper-button-prev::after {
+    @apply hidden
+}
+.work-wrapper .swiper-button-next, .work-wrapper .swiper-button-prev {
+    @apply top-[var(--swiper-navigation-top-offset,25px)] h-auto w-auto text-white transition duration-300 hover:text-white/50
+}
+.work-wrapper .swiper-button-prev {
+	@apply left-auto right-12
+}
+.portfolio-wrapper .swiper-wrapper{
+    -webkit-transition-timing-function:linear!important;
+    transition-timing-function:linear!important; 
+}
